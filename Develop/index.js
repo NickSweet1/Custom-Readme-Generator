@@ -8,7 +8,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         name: "Title",
-        message: "What is the title of the project that you are creating this ReadMe file for?"
+        message: "What is the title of the project that you are creating this ReadMe file for?" //changed to message from question to allow it to be used in the inquirer prompt
     },
     {
         name: "License Type",
@@ -25,9 +25,9 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (error) => {
         if (error) {
-            console.log("error");
+            console.log("error"); // logs error if error occurs
         } else {
-            console.log("ReadMe file created.");
+            console.log("ReadMe file created."); //logs proof that file has been created
         }
     })
 }
@@ -36,8 +36,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((answers) => {
-        const markdownContent = generateMarkdown(answers);
-        writeToFile("README.md", markdownContent);
+        const markdownContent = generateMarkdown(answers); //stoes the data to enter into README file to a variable
+        writeToFile("README.md", markdownContent); //calls the function to actually generate the README file
     });
 };
 
