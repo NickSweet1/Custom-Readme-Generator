@@ -11,6 +11,10 @@ const questions = [
         message: "What is the title of the project that you are creating this ReadMe file for?" //changed to message from question to allow it to be used in the inquirer
     },
     {
+        name: "description",
+        message: "What is a good description for the project that you are creating?"
+    },
+    {
         name: "license",
         message: "What license would you prefer to be used for your personalized ReadMe file?"
     },

@@ -5,13 +5,13 @@ function renderLicenseBadge(license) {
 
   switch (license) {
     case "MIT": 
-    licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+    licenseBadge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
     break;
     case "Apache 2.0":
-    licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]" ;
+    licenseBadge = "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)" ;
     break;
     case "GPLv3":
-    licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+    licenseBadge = "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
     break;
     default: 
     return "";
@@ -27,13 +27,13 @@ function renderLicenseLink(license) {
 
   switch (license) {
     case "MIT": 
-    licenseLink = "[License: MIT](https://opensource.org/licenses/MIT)";
+    licenseLink = "[MIT](https://opensource.org/licenses/MIT)";
     break;
     case "Apache":
-    licenseLink = "[License](https://opensource.org/licenses/Apache-2.0)" ;
+    licenseLink = "[Apache](https://opensource.org/licenses/Apache-2.0)" ;
     break;
     case "GNU":
-    licenseLink = "[License: GPL v3](https://www.gnu.org/licenses/gpl-3.0)";
+    licenseLink = "[GPL v3](https://www.gnu.org/licenses/gpl-3.0)";
     break;
     default: 
     return "";
@@ -48,7 +48,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `This project is licensed under ${license}. \n ${renderLicenseBadge(license)}, ${renderLicenseLink(license)}.`
+    return `This project is licensed under ${renderLicenseLink(license)}. \n ${renderLicenseBadge(license)}`
   } else {
     return "";
   }
@@ -56,15 +56,15 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  const licenseInfo = renderLicenseSection(data.license); //calls the function with the license that the use inputs and sets to a variable
   return `
-  # ${data.title}
+  # ${data.title} \n
   ## Description
-  ${data.description}
+  ${data.description} \n
   ## Installation
-  ${data.installation}
+  ${data.installation} \n
   ## License
-  ${data.license}
-
+  ${licenseInfo} \n
 `; //needs the rest of the imformation logged ********************************************
 }
 
