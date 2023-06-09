@@ -50,19 +50,26 @@ function renderLicenseSection(license) {
   if (license) {
     return `This project is licensed under ${renderLicenseLink(license)}. \n ${renderLicenseBadge(license)}`
   } else {
-    return "";
+    return "(license pending)";
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseInfo = renderLicenseSection(data.license); //calls the function with the license that the use inputs and sets to a variable
+  const githubUrl = data.github;
+  const githubReadme = `[Github Page](${githubUrl})`
   return `
   # ${data.title} \n
   ## Description
   ${data.description} \n
   ## Installation
   ${data.installation} \n
+  ## Contributing
+  ${data.contributions} \n
+  ## Authors
+  ${data.name} \n
+  See my ${githubReadme}! \n
   ## License
   ${licenseInfo} \n
 `; //needs the rest of the imformation logged ********************************************

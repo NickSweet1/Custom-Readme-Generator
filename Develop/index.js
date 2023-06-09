@@ -21,6 +21,18 @@ const questions = [
     {
         name: "installation",
         message: "Please breifly describe any installations needed to use your application."
+    },
+    {
+        name: "contributions",
+        message: "Please enter any information regarding how another developer can contribute to this project"
+    },
+    {
+        name: "name",
+        message: 'Please type your name for the "Authors" section of the readme.'
+    },
+    {
+        name: "github",
+        message: 'Please enter your github url for the "Authors" section.'
     }
 //needs the rest of the questions logged ************************************************************************
 ];
