@@ -16,7 +16,9 @@ const questions = [
     },
     {
         name: "license",
-        message: "What license would you prefer to be used for your personalized ReadMe file?"
+        message: "What license would you prefer to be used for your personalized ReadMe file?",
+        type: "list",
+        choices: ["MIT", "Apache", "GPL"]
     },
     {
         name: "installation",

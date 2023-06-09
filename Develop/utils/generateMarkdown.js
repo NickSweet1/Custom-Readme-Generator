@@ -7,10 +7,10 @@ function renderLicenseBadge(license) {
     case "MIT": 
     licenseBadge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
     break;
-    case "Apache 2.0":
+    case "Apache":
     licenseBadge = "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)" ;
     break;
-    case "GPLv3":
+    case "GPL":
     licenseBadge = "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
     break;
     default: 
@@ -47,10 +47,10 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license) {
+  if ((license === "MIT") || (license === "Apache") || (license === "GPL")) {
     return `This project is licensed under ${renderLicenseLink(license)}. \n ${renderLicenseBadge(license)}`
   } else {
-    return "(license pending)";
+    return "";
   }
 }
 
@@ -60,7 +60,8 @@ function generateMarkdown(data) {
   const githubUrl = data.github;
   const githubReadme = `[Github Page](${githubUrl})`
   return `
-  # ${data.title} \n
+  <h1 align="center"># ${data.title}</h1>
+  \n
   ## Description
   ${data.description} \n
   ## Installation
