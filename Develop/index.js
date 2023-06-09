@@ -7,15 +7,15 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        name: "Title",
-        message: "What is the title of the project that you are creating this ReadMe file for?" //changed to message from question to allow it to be used in the inquirer prompt
+        name: "title",
+        message: "What is the title of the project that you are creating this ReadMe file for?" //changed to message from question to allow it to be used in the inquirer
     },
     {
-        name: "License Type",
+        name: "license",
         message: "What license would you prefer to be used for your personalized ReadMe file?"
     },
     {
-        name: "Installation",
+        name: "installation",
         message: "Please breifly describe any installations needed to use your application."
     }
 //needs the rest of the questions logged ************************************************************************
@@ -36,6 +36,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((answers) => {
+        console.log(answers);
         const markdownContent = generateMarkdown(answers); //stoes the data to enter into README file to a variable
         writeToFile("README.md", markdownContent); //calls the function to actually generate the README file
     });
