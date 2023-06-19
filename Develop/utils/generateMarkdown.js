@@ -59,19 +59,35 @@ function generateMarkdown(data) {
   const licenseInfo = renderLicenseSection(data.license); //calls the function with the license that the use inputs and sets to a variable
   const githubUrl = data.github;
   const githubReadme = `[Github Page](${githubUrl})`
+  const emailAddress = data.email;
+  const emailReadme = `[Email Address](${emailAddress})`
   return `
   <h1 align="center"># ${data.title}</h1>
   \n
-  ## Description
+  ##Table of Contents
+  1. [Desctiption](#desctiption)
+  2. [Installation](#installation)
+  3. [Usage](#usage)
+  4. [Tests](#tests)
+  5. [Questions](#questions)
+  3. [Contributing](#contributing)
+  4. [Authors](#authors)
+  5. [License](license)
+  ##<a name="description">Description</a>
   ${data.description} \n
-  ## Installation
+  ## Installation<a name="installation"></a>
   ${data.installation} \n
-  ## Contributing
+  ## Usage<a name="usage"></a> 
+  ${data.usage} \n
+  ## Tests<a name="tests"></a>
+  ${data.tests} \n
+  ## Questions<a name="questions"></a>
+  For any questions or inqueries please reach me at ${emailAddress} or view my projects at ${githubReadme}! \n
+  ## Contributing<a name="contributing"></a>
   ${data.contributions} \n
-  ## Authors
+  ## Authors<a name="authors"></a>
   ${data.name} \n
-  See my ${githubReadme}! \n
-  ## License
+  ## License<a name="license"></a>
   ${licenseInfo} \n
 `; //needs the rest of the imformation logged ********************************************
 }

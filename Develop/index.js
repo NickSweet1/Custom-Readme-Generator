@@ -15,6 +15,14 @@ const questions = [
         message: "What is a good description for the project that you are creating?"
     },
     {
+        name: "usage",
+        message: "What information would you like to include in the usage section of your readme?"
+    },
+    {
+        name: "tests",
+        message: "Whould you like to include any information regarding testing?"
+    },
+    {
         name: "license",
         message: "What license would you prefer to be used for your personalized ReadMe file?",
         type: "list",
@@ -26,7 +34,7 @@ const questions = [
     },
     {
         name: "contributions",
-        message: "Please enter any information regarding how another developer can contribute to this project"
+        message: "Please enter any information regarding how another developer can contribute to this project."
     },
     {
         name: "name",
@@ -35,6 +43,10 @@ const questions = [
     {
         name: "github",
         message: 'Please enter your github url for the "Authors" section.'
+    },
+    {
+        name: "email",
+        message: "Please enter an email for the questions section of your readme."
     }
 //needs the rest of the questions logged ************************************************************************
 ];
