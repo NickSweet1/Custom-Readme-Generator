@@ -64,16 +64,16 @@ function generateMarkdown(data) {
   return `
   <h1 align="center"># ${data.title}</h1>
   \n
-  ##Table of Contents
+  ## Table of Contents
   1. [Desctiption](#desctiption)
   2. [Installation](#installation)
   3. [Usage](#usage)
   4. [Tests](#tests)
   5. [Questions](#questions)
-  3. [Contributing](#contributing)
-  4. [Authors](#authors)
-  5. [License](license)
-  ##<a name="description">Description</a>
+  6. [Contributing](#contributing)
+  7. [Authors](#authors)
+  8. [License](license)
+  ## Description<a name="description"></a>
   ${data.description} \n
   ## Installation<a name="installation"></a>
   ${data.installation} \n
