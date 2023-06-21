@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
     licenseBadge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
     break;
     case "Apache":
-    licenseBadge = "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)" ;
+    licenseBadge = "![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)" ;
     break;
     case "GPL":
     licenseBadge = "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
