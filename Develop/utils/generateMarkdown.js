@@ -60,19 +60,18 @@ function generateMarkdown(data) {
   const githubUrl = data.github;
   const githubReadme = `[Github Page](${githubUrl})`
   const emailAddress = data.email;
-  const emailReadme = `[Email Address](${emailAddress})`
   return `
   <h1 align="center"># ${data.title}</h1>
   \n
   ## Table of Contents
-  1. [Desctiption](#desctiption)
+  1. [Description](#desctiption)
   2. [Installation](#installation)
   3. [Usage](#usage)
   4. [Tests](#tests)
   5. [Questions](#questions)
   6. [Contributing](#contributing)
   7. [Authors](#authors)
-  8. [License](license)
+  8. [License](#license)
   ## Description<a name="description"></a>
   ${data.description} \n
   ## Installation<a name="installation"></a>
