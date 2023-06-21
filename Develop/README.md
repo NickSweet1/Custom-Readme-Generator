@@ -10,7 +10,7 @@
   5. [Questions](#questions)
   6. [Contributing](#contributing)
   7. [Authors](#authors)
-  8. [License](license)
+  8. [License](#license)
   ## Description<a name="description"></a>
   This is a node application that will use inquirer to generate a customized readme.md file based on user input.  
 

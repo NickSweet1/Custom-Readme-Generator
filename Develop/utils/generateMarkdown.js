@@ -61,7 +61,7 @@ function generateMarkdown(data) {
   const githubReadme = `[Github Page](${githubUrl})`
   const emailAddress = data.email;
   return `
-  <h1 align="center"># ${data.title}</h1>
+  <h1 align="center">${data.title}</h1>
   \n
   ## Table of Contents
   1. [Description](#desctiption)
