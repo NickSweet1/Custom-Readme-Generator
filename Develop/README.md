@@ -1,9 +1,10 @@
 
-  <h1 align="center">Customized Readme Generator </h1>
+  <h1 align="center">Customized Readme Generator  </h1>
   
 
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   ## Table of Contents
-  1. [Description](#desctiption)
+  1. [Description](#description)
   2. [Installation](#installation)
   3. [Usage](#usage)
   4. [Tests](#tests)
@@ -33,6 +34,4 @@
   Nicholas Sweet 
 
   ## License<a name="license"></a>
-  This project is licensed under [MIT](https://opensource.org/licenses/MIT). 
- ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
-
+  This project is licensed under [MIT](https://opensource.org/licenses/MIT).

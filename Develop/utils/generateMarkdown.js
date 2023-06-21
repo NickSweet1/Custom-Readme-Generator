@@ -48,7 +48,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if ((license === "MIT") || (license === "Apache") || (license === "GPL")) {
-    return `This project is licensed under ${renderLicenseLink(license)}. \n ${renderLicenseBadge(license)}`
+    return `This project is licensed under ${renderLicenseLink(license)}.`
   } else {
     return "";
   }
@@ -58,11 +58,13 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   const licenseInfo = renderLicenseSection(data.license); //calls the function with the license that the use inputs and sets to a variable
   const githubUrl = data.github;
+  const licenseLogo = renderLicenseBadge(data.license); //calls the function for the license badge and sets it to a variable.
   const githubReadme = `[Github Page](${githubUrl})`
   const emailAddress = data.email;
   return `
-  <h1 align="center">${data.title}</h1>
+  <h1 align="center">${data.title} </h1>
   \n
+  ${licenseLogo}
   ## Table of Contents
   1. [Description](#description)
   2. [Installation](#installation)
@@ -87,8 +89,7 @@ function generateMarkdown(data) {
   ## Authors<a name="authors"></a>
   ${data.name} \n
   ## License<a name="license"></a>
-  ${licenseInfo} \n
-`; //needs the rest of the imformation logged ********************************************
+  ${licenseInfo}`;
 }
 
 module.exports = generateMarkdown;
