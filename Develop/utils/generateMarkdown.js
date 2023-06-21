@@ -64,7 +64,7 @@ function generateMarkdown(data) {
   <h1 align="center">${data.title}</h1>
   \n
   ## Table of Contents
-  1. [Description](#desctiption)
+  1. [Description](#description)
   2. [Installation](#installation)
   3. [Usage](#usage)
   4. [Tests](#tests)

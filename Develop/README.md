@@ -1,5 +1,5 @@
 
-  <h1 align="center"># Customized Readme Generator </h1>
+  <h1 align="center">Customized Readme Generator </h1>
   
 
   ## Table of Contents
