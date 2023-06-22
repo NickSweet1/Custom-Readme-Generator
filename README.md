@@ -23,7 +23,7 @@
 
 
   ## Questions<a name="questions"></a>
-  For any questions or inqueries please reach me at nicksweetj@gmail.com or view my projects at [Github Page](https://github.com/NickSweet1)! 
+  For any questions or inqueries please reach me at nicksweetj@gmail.com or view my projects at my [Github Page](https://github.com/NickSweet1)! 
 
   ## Contributing<a name="contributing"></a>
   If you would like to contribute to this project, please for this repository to your own github. From here you can clone the repository, create your own branch, and push any changes to this branch for review. Submit a pull request and include information about any changes or additions you have made and it will be reviewed and either submitted or denied. If denied, we will leave information as to why it was not approved.  
