@@ -6,11 +6,10 @@
   1. [Description](#description)
   2. [Installation](#installation)
   3. [Usage](#usage)
-  4. [Tests](#tests)
-  5. [Questions](#questions)
-  6. [Contributing](#contributing)
-  7. [Authors](#authors)
-  8. [License](#license)
+  4. [Questions](#questions)
+  5. [Contributing](#contributing)
+  6. [Authors](#authors)
+
   ## Description<a name="description"></a>
   This is a node application that will use inquirer to generate a customized readme.md file based on user input.  
 
@@ -22,8 +21,6 @@
 
   Click here for a <a href="https://drive.google.com/file/d/1czSNL5Fw69sBzLzyxZEyvOw_dRGRyCpj/view" target="_blank"> Video Demonstration</a>.
 
-  ## Tests<a name="tests"></a>
-  Not yet applicable.  
 
   ## Questions<a name="questions"></a>
   For any questions or inqueries please reach me at nicksweetj@gmail.com or view my projects at [Github Page](https://github.com/NickSweet1)! 
@@ -34,5 +31,3 @@
   ## Authors<a name="authors"></a>
   Nicholas Sweet 
 
-  ## License<a name="license"></a>
-  This project is licensed under [MIT](https://opensource.org/licenses/MIT).
